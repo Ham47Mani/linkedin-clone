@@ -62,7 +62,7 @@ const Post = ({post}: postProps) => {
           <div className="w-full h-full my-4 flex justify-center items-center flex-wrap">
             { post.shareImg != "" && 
               <div className="h-80 flex-1 w-1/2">
-                <img src={post.shareImg} alt={post.actor.userName} />
+                <img src={post.shareImg} alt={post.actor.userName} className="h-full"/>
               </div> 
             }
             { post.video != "" &&
