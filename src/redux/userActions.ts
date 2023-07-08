@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithRedirect, signOut } from "firebase/auth";
 import { myUserType } from "../constants/types";
 import { auth } from "../constants/firebase/config";
 
@@ -24,7 +24,7 @@ export const createUserWithGoogle = createAsyncThunk(
   async () => {
     const googleProvide = new GoogleAuthProvider();
     try {
-      const res = await signInWithPopup(auth, googleProvide);
+      const res = await signInWithRedirect(auth, googleProvide);
       return res;
     } catch (error) {
       throw error;
