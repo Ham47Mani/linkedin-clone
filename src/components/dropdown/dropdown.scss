@@ -1,0 +1,21 @@
+// ------------- Start Dropdown -------------
+.overlay {
+  @apply fixed inset-0 bg-black/5 z-20 hidden;
+  &.active { @apply block }
+}
+.dropdown {
+  @apply relative z-30;
+
+  .dropdown-toggle {
+    @apply flex justify-center items-center flex-col text-black/50 cursor-pointer hover:text-black;
+  }
+  .dropdown-content {
+    @apply absolute h-fit p-2 bottom-[120%] md:top-[110%] right-0 rounded-lg transition-all duration-500 
+    opacity-0 shadow-md hidden bg-white;
+
+    &.active {
+      @apply opacity-100 block
+    }
+  }
+}
+// ------------- End Dropdown -------------

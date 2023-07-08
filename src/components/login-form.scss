@@ -1,0 +1,24 @@
+// ======================= Start Login Form =======================
+form {
+  @apply mt-6 w-full lg:w-[70%];
+
+  & > a {
+    @apply font-semibold text-linkedIn tracking-wide mt-4 block hover:underline underline-offset-1;
+  }
+  .signin-btn {
+    @apply w-full mt-8 block text-white bg-linkedIn-secondary hover:bg-linkedIn-dark;
+  }
+  .divide {
+    @apply relative min-h-[50px] my-3;
+
+    hr { @apply border-black/25 absolute inset-0 top-1/2 }
+    span { @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 p-3 bg-linkedIn-white rounded-full }
+  }
+  .google-signin-btn {
+    @apply bg-linkedIn-white w-full mt-3 block text-black/80 hover:bg-accent/5 border border-black/70
+  }
+  .signout-btn {
+    @apply bg-linkedIn-white w-full mt-6 block text-black/80 hover:bg-accent/5 border border-black/70
+  }
+}
+// ======================= End Login Form =======================

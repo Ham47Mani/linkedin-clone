@@ -1,0 +1,73 @@
+// ======================= Start Add Roboto Font =======================
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+// ======================= End Add Roboto Font =======================
+
+// ======================= Start Add Tailwindcss =======================
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// ======================= End Add Tailwindcss =======================
+
+// ======================= Start Global Rules =======================
+@layer base {
+  * { 
+    @apply items-baseline text-[100%] font-['Roboto']
+  }
+  :root, html, body {
+    @apply bg-linkedIn-white box-border
+  }
+  body {
+    @apply overflow-x-hidden overflow-y-scroll
+  }
+  
+  .main-heading {
+    @apply text-3xl lg:text-5xl font-light tracking-wide;
+  }
+  // ---- Input Group
+  .input-group {
+    @apply mb-6;
+    label {
+      @apply capitalize text-gray-900/70 font-semibold text-sm mb-2 block;
+    }
+    div {
+      @apply relative min-h-[64px];
+      input {
+        @apply bg-transparent border-black/75 text-black/75 rounded-md border p-5 w-full absolute inset-0
+        hover:bg-accent/10 
+      }
+      span {
+        @apply absolute text-linkedIn font-bold end-4 top-1/2 -translate-y-1/2 cursor-pointer
+      }
+    }
+  }
+
+  // ---- Input Group Mouve
+  .input-group-mouve {
+    @apply text-start relative min-h-[60px] mb-8;
+
+    label {
+      @apply absolute left-4 top-6 font-semibold text-black/60 transition-all duration-500 bg-linkedIn-white rounded-sm z-0 select-none
+    }
+    input {
+      @apply w-full absolute inset-0 rounded-lg border border-black/30 px-4 py-8 font-semibold bg-transparent z-10;
+    }
+    input:focus ~ label, input:not([value=""]) ~ label {
+      @apply left-2 -top-3 text-sm text-black/90 px-3 z-20
+    }
+    span {
+      @apply absolute text-linkedIn font-bold end-4 top-1/2 -translate-y-1/2 cursor-pointer pt-2 z-20 select-none
+    }
+  }
+
+  // ---- Buttons
+  .btn {
+    @apply p-2 md:px-6 md:py-3 rounded-2xl md:rounded-3xl text-center lg:min-h-[50px] h-fit font-medium;
+    a {
+      @apply block
+    }
+  }
+}
+// ======================= End Global Rules =======================
+
+// ======================= Start  =======================
+// ======================= End =======================
