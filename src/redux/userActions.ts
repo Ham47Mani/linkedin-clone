@@ -7,13 +7,9 @@ import { auth } from "../constants/firebase/config";
 export const createUserWithEmail = createAsyncThunk(
   "user/createUserWithEmail",
   async (user:myUserType) => {
-    try {
-      const {email, password} = user;    
-      const res = await createUserWithEmailAndPassword(auth, email, password);
-      return res;
-    } catch (error) {
-      throw error;
-    }
+    const {email, password} = user;    
+    const res = await createUserWithEmailAndPassword(auth, email, password);
+    return res;
   }
 )
 // ===================== End Create User =====================
@@ -23,12 +19,8 @@ export const createUserWithGoogle = createAsyncThunk(
   "user/createUserWithGoogle",
   async () => {
     const googleProvide = new GoogleAuthProvider();
-    try {
-      const res = await signInWithRedirect(auth, googleProvide);
-      return res;
-    } catch (error) {
-      throw error;
-    }
+    const res = await signInWithRedirect(auth, googleProvide);
+    return res;
   }
 )
 // ===================== End Create User With Google =====================
@@ -38,12 +30,8 @@ export const loginWithEmail = createAsyncThunk(
   "user/loginWithEmail",
   async (user:myUserType) => {
     const {email, password} = user;
-    try {
-      const res = await signInWithEmailAndPassword(auth, email, password);
-      return res;
-    } catch (error) {
-      throw error;
-    }
+    const res = await signInWithEmailAndPassword(auth, email, password);
+    return res;
   }
 )
 // ===================== End Login With Email =====================
@@ -52,12 +40,8 @@ export const loginWithEmail = createAsyncThunk(
 export const signOutAction = createAsyncThunk(
   "user/signOut",
   async () => {
-    try {
-      const res = await signOut(auth);
-      return res;
-    } catch (error) {
-      throw error;
-    }
+    const res = await signOut(auth);
+    return res;
   }
 )
 // ===================== End signOut =====================
