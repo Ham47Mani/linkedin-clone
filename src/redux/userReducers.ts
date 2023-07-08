@@ -38,13 +38,6 @@ const userReducers = createSlice({
       // ================== Create User With Email & Password ==================
 
       // ================== Create User With Google ==================
-      builder.addCase(createUserWithGoogle.fulfilled, (state: initialStateType, action) => {
-        return {
-          ...state,
-          user: action.payload.user,
-          isLoggin: true
-        }
-      });
       builder.addCase(createUserWithGoogle.rejected, (_state, error) => {
         alert(error.error.message);
       });

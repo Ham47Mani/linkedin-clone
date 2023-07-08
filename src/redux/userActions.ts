@@ -19,8 +19,7 @@ export const createUserWithGoogle = createAsyncThunk(
   "user/createUserWithGoogle",
   async () => {
     const googleProvide = new GoogleAuthProvider();
-    const res = await signInWithRedirect(auth, googleProvide);
-    return res;
+    signInWithRedirect(auth, googleProvide);
   }
 )
 // ===================== End Create User With Google =====================
