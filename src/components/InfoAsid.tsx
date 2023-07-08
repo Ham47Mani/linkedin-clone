@@ -4,6 +4,7 @@ import ColpsTabs from "./ColpsTabs";
 import { useSelector } from "react-redux";
 
 const InfoAsid = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const {user} = useSelector((state:any) => state.user);  
 
   return (

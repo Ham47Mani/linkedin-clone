@@ -1,6 +1,5 @@
 import { useRef } from "react"
 import "./dropdown.scss";
-import { useDispatch } from "react-redux";
 
 /* eslint-disable @typescript-eslint/ban-types */
 type dropDownProps = {
@@ -11,7 +10,6 @@ type dropDownProps = {
 }
 
 const Dropdown = ({dropdowntoggler, dropdownHeader, dropdownContent, dropdownFooter}: dropDownProps) => {
-  const dispatch = useDispatch();
   const togglerRef = useRef<HTMLDivElement | null>(null);
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);

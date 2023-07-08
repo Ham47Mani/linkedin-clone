@@ -1,5 +1,4 @@
 import { IconType } from "@react-icons/all-files";
-import { Dispatch } from "@reduxjs/toolkit";
 
 type buttonProps = {
   className?: string,

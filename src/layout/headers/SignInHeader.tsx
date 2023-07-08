@@ -16,10 +16,12 @@ const SignInHeader = () => {
 
           {/* -------- SignIn | SignUp -------- */}
           <div className="flex justify-between items-center gap-2">
-            <ButtonLg className="text-black/70 hover:text-black hover:bg-gray-200/50 ms-2">
+            <ButtonLg className="text-black/70 hover:text-black hover:bg-gray-200/50 ms-2" clickHadnler={() => null}>
               <a href="/signup">Join now</a>
             </ButtonLg>
-            <ButtonLg className="border border-3 border-linkedIn text-linkedIn hover:bg-linkedIn-secondary/10 hover:text-linkedIn-dark">
+            <ButtonLg className="border border-3 border-linkedIn text-linkedIn hover:bg-linkedIn-secondary/10 hover:text-linkedIn-dark"
+              clickHadnler={() => null}
+            >
               <a href="/">Sign in</a>
             </ButtonLg>
           </div>

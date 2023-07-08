@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import { createUserWithGoogle, loginWithEmail } from "../redux/userActions";
 import { InputStaticLabel } from "./Inputs";
-import { userType } from "../constants/types";
 import ButtonLg from "./buttons";
 import "./login-form.scss";
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { FaSearch } from "react-icons/fa";
 import NavItems from "./NavItems";

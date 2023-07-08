@@ -22,7 +22,7 @@
   <p align="center">
     LinkedIn Clone, this work  make it as a practice for Firebase.
     <br />
-    <a href="https://hb-linkedin-clone.vercel.app/">View Demo</a>
+    <a href="https://hb-linkedin-clone.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/Ham47Mani/linkedin-clone/issues">Report Bug</a>
     ·

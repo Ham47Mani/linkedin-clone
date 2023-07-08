@@ -1,4 +1,3 @@
-import ButtonLg from "./buttons";
 import {FaPlus} from "react-icons/fa"
 
 type boxFollowProps = {
